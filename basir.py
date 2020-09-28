@@ -8,6 +8,10 @@ def main():
     x, y = sx, sy
     m = (ey-sy)/(ex-sx)
     p = 0
+    if m<0:
+        print("I cannot do this !")
+        return
+
     if m<1:
         p = 2 * (ey-sy) - (ex-sx)
     else :
